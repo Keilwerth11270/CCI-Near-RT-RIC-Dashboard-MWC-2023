@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Near RT RIC</title>
+  <!-- Include Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="icon" href="/favicon.ico" type="image/x-icon">
+</head>
+<body class="bg-gray">
+
+<div class="container mt-5">
+  <div class="row">
+    <div class="col-12 text-center">
+        <img src="oran.png" height="120" width="120" class="float-left">
+      <h1 class="display-4" style="font-size:50px; font-weight:bold;">Near RT RIC Dashboard</h1>
+    </div>
+  </div>
+</div>
+
+<div class="container mt-5">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="bg-white rounded p-4">
+          <h1 class="text-primary text-center">xApp CATALOG</h1>
+          <a href="xApp.html" target="_blank">
+            <img src="xG-4c.png" height="380" width="380" class="d-block mx-auto my-4">
+          </a>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="bg-white rounded p-4">
+          <h1 class="text-primary text-center">gNB/UE Data</h1>
+          <table class="table table-bordered table-striped" onclick="openInNewTab('riccontrol.html')">
+            <thead class="thead-dark">
+              <tr>
+                <th colspan="5" class="text-center">RIC (RAN Intelligent Controller)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="table-primary">
+                <td class="text-center">RIC "xApp"</td>
+                <td class="text-center">RIC "xApp"</td>
+                <td class="text-center">RIC "xApp"</td>
+                <td class="text-center">RIC "xApp"</td>
+              </tr>
+              <tr class="table-primary">
+                <td class="text-center" colspan="4">Messaging Infrastructure</td>
+              </tr>
+              <tr class="table-info">
+                <td class="text-center" colspan="2">Conflict Mitigation</td>
+                <td class="text-center" colspan="2">Subscription Management</td>
+              </tr>
+              <tr class="table-info">
+                <td class="text-center" colspan="2">Management Function</td>
+                <td class="text-center" colspan="2">AI/ML Framework</td>
+              </tr>
+              <tr class="table-info">
+                <td class="text-center" colspan="2">Security</td>
+                <td class="text-center" colspan="2">xApp Repository Function</td>
+              </tr>
+              <tr class="table-secondary">
+                <td class="text-center" colspan="4">Shared Data Layer</td>
+              </tr>
+              <tr class="table-primary">
+                <td class="text-center" colspan="4">Database</td>
+              </tr>
+              <tr class="table-active">
+                <td class="text-center" colspan="4">RIC Platform</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Include Bootstrap JS and jQuery -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<script>
+// Function to open links in a new tab
+function openInNewTab(url) {
+  var win = window.open(url, '_blank');
+  win.focus();
+}
+</script>
+</body>
+</html>
